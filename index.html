@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wumpus World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Wumpus World</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Arrows:</span>
+                    <span id="arrows">1</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Status:</span>
+                    <span id="status">Exploring</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-board" id="game-board"></div>
+        
+        <div class="game-controls">
+            <div class="control-row">
+                <button id="btn-up">↑</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-left">←</button>
+                <button id="btn-shoot">🏹</button>
+                <button id="btn-right">→</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-down">↓</button>
+            </div>
+        </div>
+        
+        <div class="game-legend">
+            <div class="legend-item">
+                <div class="legend-icon player"></div>
+                <span>Player</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-icon wumpus"></div>
+                <span>Wumpus</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-icon pit"></div>
+                <span>Pit</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-icon gold"></div>
+                <span>Gold</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-icon breeze"></div>
+                <span>Breeze</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-icon stench"></div>
+                <span>Stench</span>
+            </div>
+        </div>
+        
+        <div class="game-message" id="game-message">
+            <p id="message-text">Welcome to Wumpus World! Use the controls to navigate.</p>
+            <button id="btn-restart">Restart Game</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
